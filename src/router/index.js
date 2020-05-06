@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import StudentsIndex from "../views/StudentsIndex.vue";
+import PublicShow from "../views/PublicShow.vue";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: "/students",
     name: "students-index",
     component: StudentsIndex,
+  },
+  {
+    path: "/public_show/:id",
+    name: "public_show",
+    component: PublicShow,
   },
   {
     path: "/about",

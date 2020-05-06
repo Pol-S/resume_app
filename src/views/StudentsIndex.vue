@@ -21,7 +21,7 @@
         External Resume Link: {{student.resume_url}}
       </p>
      
-      <router-link v-bind:to="`/students/${student.id}`"><vs-button type="gradient">Find out more!</vs-button></router-link>
+      <router-link v-bind:to="`/public_show/${student.id}`"><vs-button type="gradient">Find out more!</vs-button></router-link>
 
     </div>
 
@@ -51,6 +51,7 @@ export default {
       {
         first_name: "John",
         last_name: "Smith",
+        id: 1,
         email: "smith@example.com",
         password_digest: "password",
         phone_number: "(333) 444-5555",
@@ -66,6 +67,7 @@ export default {
       {
         first_name: "Jane",
         last_name: "Smith",
+        id: 2,
         email: "smith@email.com",
         password_digest: "password",
         phone_number: "(666) 777-8888",
