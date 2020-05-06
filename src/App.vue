@@ -12,6 +12,9 @@
         </div>
         <router-link to="/"><vs-button type="gradient">Home</vs-button></router-link>
       
+        <router-link to="/show"><vs-button type="gradient">Show</vs-button></router-link>|
+        <router-link to="/update"><vs-button type="gradient">Update<vs-button type="gradient"></router-link>|
+        <router-link to="/login"><vs-button type="gradient">Login<vs-button type="gradient"></router-link>
         <router-link to="/about"><vs-button type="gradient">About</vs-button></router-link>
         
         <router-link to="/students"><vs-button type="gradient">All Students</vs-button></router-link>
