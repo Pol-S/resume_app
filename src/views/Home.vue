@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <p>{{students}}</p>
+    <p>{{ students }}</p>
   </div>
 </template>
 
@@ -9,6 +9,7 @@
 
 <script>
 import axios from "axios";
+import Vuesax from "vuesax";
 
 export default {
   data: function() {
