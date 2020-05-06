@@ -1,12 +1,20 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <div v-for = "student in students">
-      <h2><b>Name:</b> {{student.first_name}} {{student.last_name}}</h2>
-      <p><b>Email:</b> {{student.email}} <b>Phone:</b> {{student.phone_number}}</p>
-      <p>Bio: {{student.short_bio}}</p>
+    <div v-for="student in students">
+      <h2>
+        <b>Name:</b>
+        {{ student.first_name }} {{ student.last_name }}
+      </h2>
+      <p>
+        <b>Email:</b>
+        {{ student.email }}
+        <b>Phone:</b>
+        {{ student.phone_number }}
+      </p>
+      <p>Bio: {{ student.short_bio }}</p>
     </div>
-    <p>{{students}}</p>
+    <p>{{ students }}</p>
   </div>
 </template>
 
