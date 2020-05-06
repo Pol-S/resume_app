@@ -2,7 +2,7 @@
   <div class="home">
     <h1>{{ message }}</h1>
     <div v-for="student in students">
-      <img v-bind:src = "student.photo" width="200" alt />
+      <img v-bind:src = "student.photo" width="800" alt />
       <h2>
         <b>Name:</b>
         {{ student.first_name }} {{ student.last_name }}
