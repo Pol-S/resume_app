@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
-    <p>{{ students }}</p>
+    <h2>{{ message }}</h2>
+
   </div>
 </template>
 
@@ -14,7 +14,7 @@ import Vuesax from "vuesax";
 export default {
   data: function() {
     return {
-      message: "Welcome to Arbys!",
+      message: "RESUMES!",
       student: {},
       students: [],
     };

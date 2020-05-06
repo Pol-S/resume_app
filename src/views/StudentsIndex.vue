@@ -2,6 +2,7 @@
   <div class="home">
     <h1>{{ message }}</h1>
     <div v-for="student in students">
+      <img v-bind:src = "student.photo" width="200" alt />
       <h2>
         <b>Name:</b>
         {{ student.first_name }} {{ student.last_name }}
@@ -12,9 +13,18 @@
         <b>Phone:</b>
         {{ student.phone_number }}
       </p>
-      <p>Bio: {{ student.short_bio }}</p>
+      <p>
+        <b>Twitter:</b>
+        {{ student.twitter_handle}}
+      </p>
+      <p>
+        External Resume Link: {{student.resume_url}}
+      </p>
+     
+      <router-link v-bind:to="`/students/${student.id}`"><vs-button type="gradient">Find out more!</vs-button></router-link>
+
     </div>
-    <p>{{ students }}</p>
+
   </div>
 </template>
 
